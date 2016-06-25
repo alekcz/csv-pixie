@@ -1,0 +1,5 @@
+{:name csv-pixie 
+:version "0.0.1-alpha" 
+:description "CSV library for pixie" 
+:dependencies [] 
+:repo "https://github.com/alekcz/csv-pixie.git"}
