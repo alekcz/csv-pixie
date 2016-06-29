@@ -21,7 +21,14 @@
     	;(map #(zipmap (map keyword head) %1) line))))
 		(zipmap (map keyword head) (map clean-cell line)))))
 
+(defn getcolumn [dataset column]
+  (let [data dataset]
+    (for [d data]
+      ((keyword column) d))))
+
 (defn read-csv [filename delimiter]
 	(make-map (parse-csv (open-csv filename) delimiter)))
+
+
 
 
